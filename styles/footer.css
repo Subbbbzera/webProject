@@ -1,0 +1,107 @@
+body {
+  flex: 1;
+}
+
+.site-footer {
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  padding: 50px 0;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 0 60px;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1 1 320px;
+}
+
+.footer-left h3,
+.footer-right h3 {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.footer-left p,
+.footer-right p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #cccccc;
+  margin: 6px 0;
+}
+
+.footer-right a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 15px;
+}
+
+.footer-right a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.15);
+}
+
+.footer-left .copyright {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #999999;
+}
+
+/* Адаптація для планшетів і мобільних */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 40px;
+  }
+
+  .footer-left,
+  .footer-right {
+    flex: 1 1 100%;
+  }
+
+  .footer-left h3,
+  .footer-right h3 {
+    font-size: 20px;
+  }
+
+  .footer-left p,
+  .footer-right p,
+  .footer-right a {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    justify-content: start;
+  }
+}

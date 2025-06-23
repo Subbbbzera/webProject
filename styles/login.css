@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #ff836d 0%, #FB6418 50%, #ff816b 100%);
+}
+
+.profile-container {
+  max-width: 450px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"] {
+  width: 95%;
+  padding: 12px 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  transition: border-color 0.3s;
+  font-family: "Roboto", sans-serif;
+}
+.gender-select{
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  border-bottom: 2px solid #ccc;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #FB6418;
+}
+
+.save-button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  background-color: #FB6418;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.save-button:hover {
+  background-color: #e55b12;
+  transform: scale(1.02);
+}
+
+.reg-p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.reg-p a {
+  color: #FB6418;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.reg-p a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  text-align: center;
+  color: #d8000c;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  user-select: none;
+  color: #555;
+}

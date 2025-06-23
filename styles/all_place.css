@@ -1,0 +1,61 @@
+body {
+margin: 0;
+padding: 0;
+font-family: "Roboto", sans-serif;
+background: linear-gradient(to right, #FF735B, #FB6418);
+}
+
+.map-page-container {
+max-width: 1000px;
+margin: 60px auto;
+padding: 35px;
+background: white;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+text-align: center;
+}
+
+.map-page-container h1 {
+font-size: 26px;
+color: #333;
+margin-bottom: 20px;
+}
+
+
+#searchInput:focus {
+box-shadow: 0 0 6px rgba(0,0,0,0.2);
+border-color: #FF735B;
+}
+
+#map {
+height: 500px;
+width: 100%;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.2);
+border: 2.5px solid #acacac;
+}
+.address-search {
+margin: 10px auto 20px;
+padding: 10px;
+width: 90%;
+max-width: 400px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 8px;
+}
+
+#searchButton {
+padding: 12px;
+background-color: #FB6418;
+color: white;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: background-color 0.3s;
+margin-left: 15px;
+font-size: 15px;    
+
+}
+#searchButton:hover {
+background-color: #e55b12;
+}

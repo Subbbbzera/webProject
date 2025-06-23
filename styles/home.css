@@ -1,0 +1,167 @@
+body {
+  background: linear-gradient(90deg, #FF735B 0%,#FB6418 100%);
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+
+
+.container {
+  
+  max-width: 600px;
+  margin: 25px 0  40px 100px;
+}
+
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-right: 200px;
+}
+.progress-image1 {
+  border-radius: 12px; 
+  padding: 2.5px; 
+  background: white; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.firstpage{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+h1{
+  font-size: 55px;
+}
+.startext{
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  text-indent: 20px;
+}
+
+
+.button{
+  display: inline-block;
+  padding: 12px 22px;
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 8px;
+  transition:  transform 0.3s;
+
+}
+.button:hover {
+  transform: scale(1.05);
+}
+
+
+.linktolog{
+  margin-top: 20px;
+  margin-bottom: 90px;
+  font-weight: 500;
+}
+
+
+.link-text{
+  color: white;
+  text-decoration: none;
+}
+.link-text:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+          /*  Друга сторінка */
+.progress-section {
+  background-color: white;
+  padding: 20px 0 35px 0;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.Textcontainer{
+  border: 4px solid #ffae7f; 
+  border-radius: 12px; 
+  padding: 20px 40px; 
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.Textcontainer h2{
+
+  font-size: 50px;
+}
+.Textcontainer p{
+  font-weight: 500;
+  font-size: 19px;
+}
+
+
+.midtext{
+  text-indent: 20px;
+}
+
+
+
+.start-button {
+  display: inline-block;
+  padding: 12px 27px;
+  background-color: #FB6418;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 19px;
+  margin: 20px 0;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.start-button:hover {
+  transform: scale(1.05);
+  background-color: #e55b12;
+}
+
+.page2-image1,
+.page2-image2 {
+  border: 4px solid #ffae7f; 
+  border-radius: 12px; 
+  padding: 5px; 
+  background: white; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  margin-left: 120px;
+}
+.page2-image2 {  margin-left: 160px; }
+
+
+/* Стани до появи */
+.reveal {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+/* Коли елемент видно */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

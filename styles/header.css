@@ -1,0 +1,153 @@
+header {
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  width: 100%;
+
+}
+
+.nav-left .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  margin: 50px;
+  transition: color 0.3s;
+}
+
+.nav-center {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  flex: 1;
+}
+
+.nav-item a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 10px;
+  transition: transform 0.3s;
+  display: inline-block;
+}
+
+.nav-item:not(.dropdown) a:hover {
+  transform: scale(1.05);
+}
+
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 160px;
+  padding: 10px 0;
+  z-index: 9999;
+  list-style: none;
+  margin: 0;
+
+}
+
+.dropdown-menu li a {
+  color: #000;
+  padding: 8px 16px;
+  display: block;
+  text-decoration: none;
+  transition: none;
+  font-size: 18px;
+}
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-right{
+margin-right: 50px;
+}
+
+.nav-right a.btn {
+  margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 17px;
+  background: #FB6418;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+.nav-right a.btn:hover {
+  transform: scale(1.05);
+}
+.profile-icon img {
+  margin: 0 30px;
+  border: none;
+  background: none;
+  transition: transform 0.3s;
+  width: 40px; 
+  border-radius: 50%;
+}
+
+.profile-icon img:hover {
+  transform: scale(1.1);
+}
+.profile-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-dropdown:hover .profile-menu {
+  display: block;
+}
+
+.profile-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
+  padding: 5px 0;
+  list-style: none;
+  z-index: 10000;
+}
+
+.profile-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-item.active > a {
+  border-bottom: 3px solid #FB6418;
+  padding-bottom: 4px;
+}

@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background: linear-gradient(to right, #FF735B 0%, #FB6418 50%, #FF735B 100%); 
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .places-section {
+    margin-top: 20px;
+  }
+  
+  .place-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .place-name,
+  .place-created {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .place-entry {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 10px;
+  }
+  
+  .place-name,
+  .place-created {
+    padding: 10px;
+  }
+  
+  .link-to-newmap {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .link-text {
+    color: #FB6418;
+    text-decoration: none;
+  }
+  
+  .link-text:hover {
+    text-decoration: underline;
+  }
+  .place-link {
+  color: #000; /* чорний колір для посилання */
+  text-decoration: none; /* без підкреслення */
+}
+
+.place-link:hover {
+  color: #FB6418; /* зміна кольору при наведенні на посилання */
+  text-decoration: underline; /* підкреслення при наведенні */
+}
+.search-form {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 8px 12px;
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

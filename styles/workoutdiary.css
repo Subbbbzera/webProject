@@ -1,0 +1,72 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(to right, #ff836d 0%, #FB6418 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+.diary-grid {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.diary-grid h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.diary-grid p {
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 10px 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.workout-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.workout-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 250px;
+    min-height: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.workout-date {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.workout-details {
+    flex-grow: 1;
+}
+
+.exercise-line {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #555;
+}
